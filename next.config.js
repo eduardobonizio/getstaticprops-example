@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+  images: {
+    domains: ['raw.githubusercontent.com'],
+  },
+  i18n: {
+    locales: ['en', 'pt'],
+    defaultLocale: 'pt',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

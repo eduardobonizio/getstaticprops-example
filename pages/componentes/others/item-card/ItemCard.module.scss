@@ -1,0 +1,46 @@
+@import '../../../styles/_variables';
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 0px;
+    width: auto;
+    width: 280px;
+  }
+
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .equiped {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    background-color: $equiped-item-tag-color;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 90%;
+  }
+
+  .equiped {
+    position: absolute;
+    bottom: 50px;
+    right: 27px;
+    background-color: $equiped-item-tag-color;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+  }
+}
